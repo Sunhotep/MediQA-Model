@@ -1,33 +1,42 @@
-# Bert-like Models feasibility Exploration on Medical Short-Text Q&A Tasks
-
-Explored the feasibility of Bert-like models for machine reading comprehension of small 
-text in specialized areas; selected and blended different classes of Bert-like models to 
-pursue better performance on small text data obtained from medical illustration videos; 
-attempted to train field-specific MRC model for medical Q&A tasks, tuning parameters; 
-tested and evaluated the performance; NLP skillsets increased by interacting with 
-supervisor and Ph.D. students; attained a deeper understanding of DL & RL formulas; 
-research contributed to Ningbo 2025 Sci & Tech Innovation Program.
-
-### 预测步骤：
-关黄母颗粒问答预测
-sh test_bert_ghm.sh
-丁苯酚问答预测
-sh test_bert_dbf.sh   执行此脚本时，按照metrics.py 730行 提示 更改存放地址
-
-### 参数：
---lm: 要加载的模型的文件夹名称
---do_train: 开启训练
---evaluate_during_training: 开启训练时的验证
---do_test: 开启预测
---version_2_with_negative: 开启适配于数据中有无答案数据
---threads: 数据处理所使用的线程数
-
-## Prediction steps.
-关黄母 granules quiz prediction sh test_bert_ghm.sh butanol quiz prediction sh test_bert_dbf.sh When executing this script, follow metrics.py line 730 Prompt Change storage address
-
-## Parameters.
---lm: the name of the folder where the model is to be loaded --do_train: turn on training --evaluate_during_training: turn on validation during training --do_test: turn on prediction --version_2_with_negative: turn on adaptation to data with or without answer data --threads : the number of threads used for data processing
 
 
+# **Bert-like Models Feasibility Exploration on Medical Short-Text Q&A Tasks**
 
+In this project, I explored the feasibility of leveraging Bert-like models for machine reading comprehension (MRC) in specialized domains, specifically medical short-text Q&A tasks. The work focused on blending different classes of Bert-like models to improve performance when handling small medical datasets extracted from medical illustration videos.
 
+Key accomplishments and findings include:
+
+- **Model Exploration:** Selected and blended various Bert-like models to enhance performance on small text data from medical contexts.
+- **Field-Specific MRC Model Training:** Attempted to train a specialized MRC model tailored to medical Q&A tasks, adjusting hyperparameters and evaluating performance.
+- **Performance Testing:** Rigorous testing and evaluation of the model’s ability to comprehend and respond to medical questions.
+- **Skill Development:** Improved my Natural Language Processing (NLP) capabilities by working closely with my supervisor and Ph.D. students. Gained a deeper understanding of deep learning (DL) and reinforcement learning (RL) formulas.
+- **Research Contribution:** This research contributed to the Ningbo 2025 Science and Technology Innovation Program, advancing knowledge in the application of Bert-like models to medical tasks.
+
+---
+
+### **Prediction Steps**
+
+To execute predictions with the trained model, follow these steps:
+
+1. **Run the Prediction Scripts:**
+   - For **关黄母颗粒** question-answering prediction:
+     ```bash
+     sh test_bert_ghm.sh
+     ```
+   - For **丁苯酚** question-answering prediction:
+     ```bash
+     sh test_bert_dbf.sh
+     ```
+
+2. **Adjust Storage Path**: When executing the script, make sure to change the storage address as prompted by `metrics.py` at line 730.
+
+---
+
+### **Parameters Overview**
+
+- **`--lm`**: Specify the folder containing the pre-trained model to be loaded.
+- **`--do_train`**: Activate training mode.
+- **`--evaluate_during_training`**: Enable validation during training.
+- **`--do_test`**: Activate prediction mode.
+- **`--version_2_with_negative`**: Adapt the model for datasets that may contain both questions with answers and questions without answers.
+- **`--threads`**: Specify the number of threads for data processing.
